@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang=ja>
+    <head>
+        <title>英語ディベート論題ランダム表示</title>
+        <meta name="description" content="ボタン一つで英語ディベートの論題をランダム表示します"
+       
+        <!--CSS-->
+        <link rel"stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
+    </head>
+    <body>
+        <form><input type="button" value="英語ディベート論題" onClick="random()"> <br />
+        <span id="omikuji">ここに表示されます</span></form>
+        
+        <script type="text/javascript">
+        function random() {
+        var rand = Math.floor( Math.random() * 5) ; //おみくじの目の生成
+        if (rand==0) msg="	THW allow gifted students to skip grades in schools.(出典：HPDU推奨論題リスト)	";
+if (rand==1) msg="	THW stop teaching English in elementary schools.(出典：HPDU推奨論題リスト)	";
+if (rand==2) msg="	THBT teachers' salaries should be based on students' academic performance.(出典：HPDU推奨論題リスト)	";
+if (rand==3) msg="	THBT schools should ban animal dissection.(出典：HPDU推奨論題リスト)	";
+if (rand==4) msg="	THBT it is better for high school students to have a part-time job.(出典：HPDU推奨論題リスト)	";
+if (rand==5) msg="	THW introduce a fat tax on junk foods.(出典：HPDU推奨論題リスト)	";
+if (rand==6) msg="	THW ban tobacco.(出典：HPDU推奨論題リスト)	";
+if (rand==7) msg="	THW ban cosmetic surgery.(出典：HPDU推奨論題リスト)	";
+if (rand==8) msg="	THW ban children from becoming professional models.(出典：HPDU推奨論題リスト)	";
+if (rand==9) msg="	THBT watching movies at home is better than watching movies at the theater.(出典：HPDU推奨論題リスト)	";
+if (rand==10) msg="	THBT television does more harm than good.	(出典：HPDU推奨論題リスト)";
+if (rand==11) msg="	THW ban violent video games.(出典：HPDU推奨論題リスト)	";
+if (rand==12) msg="	THW ban combat sports.(出典：HPDU推奨論題リスト)	";
+if (rand==13) msg="	THBT the use of animals for public entertainment should be banned.(出典：HPDU推奨論題リスト)	";
+if (rand==14) msg="	THW make voting compulsory.(出典：HPDU推奨論題リスト)	";
+if (rand==15) msg="	THBT the prime minister of Japan should be directly elected by citizens’ vote.(出典：HPDU推奨論題リスト)	";
+if (rand==16) msg="	THW abolish the House of Councilors.(出典：HPDU推奨論題リスト)	";
+if (rand==17) msg="	THW introduce mandatory retirement age for politicians.	(出典：HPDU推奨論題リスト)";
+if (rand==18) msg="	THW set quotas for women in the Diet.(出典：HPDU推奨論題リスト)	";
+if (rand==19) msg="	THW require all Internet users to use their real names.	(出典：HPDU推奨論題リスト)";
+if (rand==20) msg="	THW restrict advertising aimed at children.(出典：HPDU推奨論題リスト)	";
+if (rand==21) msg="	THBT criminals trials should be broadcasted on TV.(出典：HPDU推奨論題リスト)	";
+if (rand==22) msg="	THW abolish death penalty.(出典：HPDU推奨論題リスト)	";
+if (rand==23) msg="	THBT torture is justified for national security.(出典：HPDU推奨論題リスト)	";
+if (rand==24) msg="	THBT all violent juvenile offenders should be treated as adults in the criminal justice system.(出典：HPDU推奨論題リスト)	";
+if (rand==25) msg="	THBT governments should never pay ransom to save hostage.(出典：HPDU推奨論題リスト)	";
+if (rand==26) msg="	THW introduce conscription.(出典：HPDU推奨論題リスト)	";
+if (rand==27) msg="	THW legalize active euthanasia.	(出典：HPDU推奨論題リスト)";
+if (rand==28) msg="	THW legalize selling organs.(出典：HPDU推奨論題リスト)	";
+if (rand==29) msg="	THW ban abortion.	(出典：HPDU推奨論題リスト)";
+if (rand==30) msg="	THW abolish zoos.(出典：HPDU推奨論題リスト)	";
+if (rand==31) msg="	THW ban whaling.(出典：HPDU推奨論題リスト)	";
+if (rand==32) msg="	THW legalize genetically modified foods.	(出典：HPDU推奨論題リスト)";
+if (rand==33) msg="	THW ban animal experiments.	(出典：HPDU推奨論題リスト)";
+if (rand==34) msg="	THBT Japan should introduce the carbon tax.(出典：HPDU推奨論題リスト)	";
+if (rand==35) msg="	THBT Japan should stop using nuclear power plants.(出典：HPDU推奨論題リスト)	";
+if (rand==36) msg="	THBT Japan should remove import restrictions on farm products.(出典：HPDU推奨論題リスト)	";
+if (rand==37) msg="	THW raise the consumption tax.(出典：HPDU推奨論題リスト)	";
+if (rand==38) msg="	THW set a maximum limit on salaries.(出典：HPDU推奨論題リスト)	";
+if (rand==39) msg="	THW stop sending humans into space.(出典：HPDU推奨論題リスト)	";
+if (rand==40) msg="	THBT Japan should make English the second official language.(出典：HPDU推奨論題リスト)	";
+if (rand==41) msg="	That the Japanese Government should relocate the capital functions out of Tokyo.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==42) msg="	That the Japanese Government should ban production and sales of fossil-fueled cars, including hybrid cars, by 2035.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==43) msg="	R1/R2: THW impose criminal liability on parents who do not vaccinate their children.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==44) msg="	R3: THW require citizens to pass a knowledge test on current affairs as a condition for voting in elections.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==45) msg="	R4: THW allow high school students to fire their teachers.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==46) msg="	R5: THW allow police to use entrapment as a law enforcement tactic.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==47) msg="	R6: THW prioritize palliative care over curative care for patients suffering from painful and critical issues.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==48) msg="	QF: In countries with a system of mandatory military service, THBT the feminist movement should actively advocate for women to be conscripted like men.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==49) msg="	SF: THBT after meeting their basic needs, individuals should donate their wealth towards poverty alleviation.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==50) msg="	GF: THW break up megacities.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==51) msg="	The Japanese government should limit the weekly maximum average working hours, including overtime, to 48 hours (following the E.U.).	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==52) msg="	Japan should legalize voluntary active euthanasia.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==53) msg="	Japan should significantly relax its immigration policies.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==54) msg="	The Japanese government should adopt a social security system that provides a basic income to all Japanese citizens.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==55) msg="	Japan should contribute more actively to the United Nations Peacekeeping Operations by relaxing its restrictions for the Self-Defense Forces.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==56) msg="	The Japanese government should abolish nuclear power plants.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==57) msg="	The Japanese government should remove the tariff on rice imports.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==58) msg="	Japanese universities should start their academic year in September.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==59) msg="	Japan should abolish capital punishment.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==60) msg="	Japan should significantly relax its immigration policies.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==61) msg="	The Japanese government should prohibit worker dispatching. 	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==62) msg="	Japan should lower the age of adulthood to 18.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==63) msg="	 All elementary and secondary schools in Japan should have classes on Saturday. 	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==64) msg="	  Japan should make English its second official language.	(出典：HEnDA / JWSDC論題リスト)	";
+if (rand==65) msg="	R1: THBT giving money as a birthday is good for both parents and their children in high school.	(出典：HPDU論題リスト)	";
+if (rand==66) msg="	R2: In order for high school students to confess their love, THBT sending message on smartphone is better than face-to-face talk.	(出典：HPDU論題リスト)	";
+if (rand==67) msg="	R3: THW ban too skinny models (with a BMI below 18.5) from showing up in media.	(出典：HPDU論題リスト)	";
+if (rand==68) msg="	R1: This house would designate one city to permanently host the Olympics.	(出典：HPDU論題リスト)	";
+if (rand==69) msg="	R2: This house would aggressively prioritize the posting of female diplomats to countries with poor women's rights records.	(出典：HPDU論題リスト)	";
+if (rand==70) msg="	R3: This house would ban the display of art created with the intended purpose or reasonably likely outcome of creating offence.	(出典：HPDU論題リスト)	";
+if (rand==71) msg="	R4: This house believes that if technology permitted us to identify people who are genetically predisposed to commit crimes, it would be appropriate for the state to monitor them and limit their activities.	(出典：HPDU論題リスト)	";
+if (rand==72) msg="	R1: This house believes that the age of digital information (e.g. social media, online news, etc.) has done more harm than good in protecting democracy.	(出典：HPDU論題リスト)	";
+if (rand==73) msg="	R2: Given the technology, this house would erase society's memory and evidence of the criminal past of former convicts after their release from prison.	(出典：HPDU論題リスト)	";
+if (rand==74) msg="	R3: This house prefers a world without lying.	(出典：HPDU論題リスト)	";
+if (rand==75) msg="	R4: This house believes that, assuming Personal Protective Equipment is sufficiently available, medical workers during a pandemic should have the right to opt out of service.	(出典：HPDU論題リスト)	";
+if (rand==76) msg="	QF: This house believes that spouses of political figures should not be recognized as public figures.	(出典：HPDU論題リスト)	";
+if (rand==77) msg="	SF: Instead of leaving the decision up to the producing company, this house would legally require that Self-Driving Cars produced by companies always choose to maximize the number of lives saved, even if it leads to the death of the passengers.	(出典：HPDU論題リスト)	";
+if (rand==78) msg="	GF: This house believes that hacking is a legitimate way of protest against multinational corporations.	(出典：HPDU論題リスト)	";
+if (rand==79) msg="	R1: THW allow performance-enhancing drugs in professional sporting events.	(出典：HPDU論題リスト)	";
+if (rand==80) msg="	R2: TH prefers a world in which there are no restrictions on student’s appearances in schools. *uniforms are an exception	(出典：HPDU論題リスト)	";
+if (rand==81) msg="	R3: THW ban Valentine’s Day in schools.	(出典：HPDU論題リスト)	";
+if (rand==82) msg="	R4: THBT online learning is better than offline learning.	(出典：HPDU論題リスト)	";
+if (rand==83) msg="	R1: THW ban eating contests	(出典：HPDU論題リスト)	";
+if (rand==84) msg="	R2: THBT holding a gorgeous wedding ceremony is better than holding a simple one.	(出典：HPDU論題リスト)	";
+if (rand==85) msg="	R3: THBT criminal trials should be publicly broadcasted on TV and other media (like YouTube).	(出典：HPDU論題リスト)	";
+if (rand==86) msg="	R1: This house would pay all elected politicians the median wage in the their countries.	(出典：HPDU論題リスト)	";
+if (rand==87) msg="	R2: This house would give national treasures (like the Rosetta Stone in the British Museum) back to their countries of origin.	(出典：HPDU論題リスト)	";
+if (rand==88) msg="	R3: This house believes that only countries with good human rights records should be allowed to host the Olympics.	(出典：HPDU論題リスト)	";
+if (rand==89) msg="	R4: This house would legalize surrogacy for profit in liberal democracies.	(出典：HPDU論題リスト)	";
+if (rand==90) msg="	R1: THW abolish the Olympic Games.	(出典：HPDU論題リスト)	";
+if (rand==91) msg="	R2: THW prohibit criminals from publishing descriptions of their crimes.	(出典：HPDU論題リスト)	";
+if (rand==92) msg="	R3: THBT the state should not subsidize art.	(出典：HPDU論題リスト)	";
+if (rand==93) msg="	R4: THBT feminist movement should oppose affirmative action for women.	(出典：HPDU論題リスト)	";
+if (rand==94) msg="	QF: THBT humanitarian aid does more harm than good to active conflict zones.	(出典：HPDU論題リスト)	";
+if (rand==95) msg="	SF: THW prohibit corporations from sponsoring academic research.	(出典：HPDU論題リスト)	";
+if (rand==96) msg="	GF: THW abolish private property.	(出典：HPDU論題リスト)	";
+if (rand==97) msg="	R1: This House believes that professional sports players should be allowed to enhance abilities by using drugs.	(出典：HPDU論題リスト)	";
+if (rand==98) msg="	R2: This House, as an individual, would not consume works produced by immoral artists.	(出典：HPDU論題リスト)	";
+if (rand==99) msg="	R3: This House believes that debating skills matter in getting a boyfriend or a girlfriend.	(出典：HPDU論題リスト)	";
+if (rand==100) msg="	R4: This House would mandate retirement from the National Diet at age 65.	(出典：HPDU論題リスト)	";
+if (rand==101) msg="	R1: THW ban beauty contest.	(出典：HPDU論題リスト)	";
+if (rand==102) msg="	R2: THW introduce conscription.	(出典：HPDU論題リスト)	";
+if (rand==103) msg="	R3: THW completely ban broadcasting of suicide.	(出典：HPDU論題リスト)	";
+if (rand==104) msg="	R4: THW ban all forms of gambling.	(出典：HPDU論題リスト)	";
+if (rand==105) msg="	QF: THW ban use of combat drones.	(出典：HPDU論題リスト)	";
+if (rand==106) msg="	SF: THW trade with oppressive regimes.	(出典：HPDU論題リスト)	";
+if (rand==107) msg="	GF: THBT free speech should include the right to offend.	(出典：HPDU論題リスト)	";
+if (rand==108) msg="	R1: THW ban cosmetic surgery.	(出典：HPDU論題リスト)	";
+if (rand==109) msg="	R2: THW require doctors to report all cases of suspected domestic violence.	(出典：HPDU論題リスト)	";
+if (rand==110) msg="	R3: THW give right to vote to prisoners.	(出典：HPDU論題リスト)	";
+if (rand==111) msg="	QF: THW legalize active euthanasia.	(出典：HPDU論題リスト)	";
+if (rand==112) msg="	SF: THW give national treasures back to its people.	(出典：HPDU論題リスト)	";
+if (rand==113) msg="	GF: THW criminalize paying ransom to hostages.	(出典：HPDU論題リスト)	";
+if (rand==114) msg="	R1: THW ban alcohol.	(出典：HPDU論題リスト)	";
+if (rand==115) msg="	R2: THW abolish escalator system in schools (such as Keio, Waseda).	(出典：HPDU論題リスト)	";
+if (rand==116) msg="	R3: THW legalize organ transplant for profit.	(出典：HPDU論題リスト)	";
+if (rand==117) msg="	QF: THBT US military bases should be removed from Japan.	(出典：HPDU論題リスト)	";
+if (rand==118) msg="	SF: THW abolish all laws restricting free speech.	(出典：HPDU論題リスト)	";
+if (rand==119) msg="	GF: TH prefers the world without marriage.	(出典：HPDU論題リスト)	";
+if (rand==120) msg="	R1: THW require broadcasters to devote equal time and prominence to coverage of female sports games as male sports games.	(出典：HPDU論題リスト)	";
+if (rand==121) msg="	R2: THW pay all elected politicians the median wage in their electoral district.	(出典：HPDU論題リスト)	";
+if (rand==122) msg="	R3: THW allow prisoners to donate their organs in exchange for shortening of their sentences.	(出典：HPDU論題リスト)	";
+if (rand==123) msg="	QF: THBT, upon request by the authority, smart phone companies should be forced to unlock their products usually by criminals.	(出典：HPDU論題リスト)	";
+if (rand==124) msg="	SF: THBT the EU should abandon its commitment to the principle of open borders between member states.	(出典：HPDU論題リスト)	";
+if (rand==125) msg="	GF: THBT democratic countries should not attend sporting events in countries with bad human rights records.	(出典：HPDU論題リスト)	";
+if (rand==126) msg="	R1: THW require all the Internet users to use the real names.	(出典：HPDU論題リスト)	";
+if (rand==127) msg="	R2: THBT gambling of all forms (e.g. lotteries, horse racing, or casinos) should be illegal.	(出典：HPDU論題リスト)	";
+if (rand==128) msg="	R3: THBT governments should refuse to assist in rebuilding areas prone to natural disasters.	(出典：HPDU論題リスト)	";
+if (rand==129) msg="	QF: THW abolish death penalty.	(出典：HPDU論題リスト)	";
+if (rand==130) msg="	SF: THW provide welfare in the form of basic goods and services, rather than cash payments.	(出典：HPDU論題リスト)	";
+if (rand==131) msg="	GF: THBT governments should negotiate with terrorists when their citizens are taken hostages by terrorists groups.	(出典：HPDU論題リスト)	";
+if (rand==132) msg="	R1: THBT parents should have the right to access all accounts of their children's social networking sites.	(出典：HPDU論題リスト)	";
+if (rand==133) msg="	R2: THW apply the retirement age to politicians.	(出典：HPDU論題リスト)	";
+if (rand==134) msg="	R3: THBT the Tokyo Olympics venue should include the Tohoku/Fukushima area.	(出典：HPDU論題リスト)	";
+if (rand==135) msg="	QF: THW deny those who have made poor lifestyle choices and actively harmed themselves (fatty food, alcohol, smoking) the access to the national health insurance.	(出典：HPDU論題リスト)	";
+if (rand==136) msg="	SF: THBT research institutions that actively employ female scientists should be given more research funding by the government.	(出典：HPDU論題リスト)	";
+if (rand==137) msg="	GF: THBT Japan should not impose any sanctions on Russia regarding the Crimea issue.	(出典：HPDU論題リスト)	";
+if (rand==138) msg="	R1: THW allow gifted students to skip grades in schools.	(出典：HPDU論題リスト)	";
+if (rand==139) msg="	R2: THW ban experiments on animals.	(出典：HPDU論題リスト)	";
+if (rand==140) msg="	R3: THBT using the Internet in political election campaigns will do more harm than good.	(出典：HPDU論題リスト)	";
+if (rand==141) msg="	QF: THW use quota to increase the representation of women in the Japanese parliament.	(出典：HPDU論題リスト)	";
+if (rand==142) msg="	SF: THW penalize media companies that broadcast the use of physical abuse (such as beating or kicking someone) as a form of humor.	(出典：HPDU論題リスト)	";
+if (rand==143) msg="	GF: THBT the US federal government should ban the private use of firearms.	(出典：HPDU論題リスト)	";
+if (rand==144) msg="	R1: THBT students in elementary schools and junior schools should be required to repeat a grade if their class performance is poor.	(出典：HPDU論題リスト)	";
+if (rand==145) msg="	R2: THW make voting at elections compulsory.	(出典：HPDU論題リスト)	";
+if (rand==146) msg="	R3: THW ban fortune-telling businesses.	(出典：HPDU論題リスト)	";
+
+
+
+
+        document.getElementById("omikuji").innerHTML = msg; //おみくじの目の出力
+        }
+        </script>
+        
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        
+    </body>
+</html>
